@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navhome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/navdiagnostico"
+            android:icon="@drawable/ic_settings_overscan_black_24dp"
+            android:title="Diagnóstico en Tiempo Real"/>
+        <item
+            android:id="@+id/navtratamiento"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="Control de Plagas"/>
+        <item
+            android:id="@+id/navinformacion"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Información de Plagas"/>
+        <item
+            android:id="@+id/navproceso"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Proceso Diagnóstico Plagas"/>
+    </group>
+    <item android:title="Acerca de...">
+
+        <menu>
+            <item
+                android:id="@+id/nav_infoapp"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="Aplicación"/>
+        </menu>
+    </item>
+</menu>

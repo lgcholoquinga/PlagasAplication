@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_home">
+
+            <TextView
+                android:id="@+id/tvhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Bienvenidos a PlagasApp "
+                android:textColor="@color/textColorDark"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsegundotexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvhome"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Te permite realizar un diagnóstico en tiempo real para determinar posibles amenzas de plagas en tus cultivos de papas."
+                android:textAlignment="center"
+                android:textColor="@color/textColorDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvtercertexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvsegundotexto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Detecta Posibles Amenzas de Plagas :"
+                android:textColor="@color/textColorDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvcuartotextpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvtercertexto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="Punta Morada (Bactericera cockerelli)"
+                android:textColor="@color/textColorDark"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/imvpuntamorada"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bactericera"
+                android:layout_below="@+id/tvcuartotextpo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tvquintotexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imvpuntamorada"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="Mosca Minadora"
+                android:textColor="@color/textColorDark"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imvimagen"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tvquintotexto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/minador" />
+
+            <TextView
+                android:id="@+id/tvsextotexto"
+                android:layout_width="wrap_content"
+                android:layout_height="157dp"
+                android:layout_below="@+id/imvimagen"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="26dp"
+                android:text="También tienes acceso a la información sobre las plagas de papas, insecticidas para el control y un diagrama sobre como realizar el proceso de diagnóstico de manera correcta."
+                android:textAlignment="center"
+                android:textColor="@color/textColorDark"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
